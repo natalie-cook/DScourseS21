@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS5_Cook}
+\author{natcook97 }
+\date{March 2021}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item For this data scraping exercise I decided to scrape movie data from IBDb. I want to watch more new movies instead of the same old ones over and over so this creates a dataframe of the top 100 rom coms. I pulled the selectors for the rankings, titles, descriptions, and runtimes which seemed like the information that I would need in order to make a decision about what to watch. I used the rvest package, mainly the html nodes command and the html text command to parse the data. For the rankings I had to change the data type from string or character to numeric. I also had to do some cleaning up to remove extraneous elements that came through after I had imported using a CSS selector. This is probably more of an exercise in webscraping more than the creation of a data set I will actually use in the future.  
+    
+    \item I used the fredr package and the Fed API to grab monthly unemployment data for the past 21 years from the St Louis Fed. It was super simple to just use the fredr command that they had created and fill out the appropriate arguments. It is fun/horrific to scroll down and see the rate skyrocket in April of 2020.
+\end{enumerate}
+
+\end{document}
